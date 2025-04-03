@@ -1,0 +1,35 @@
+{
+  "name": "unit4.prisma.workshop.puppybowl.api",
+  "version": "1.0.0",
+  "description": "A simple CRUD API using Prisma and Express.",
+  "main": "server.js",
+  "scripts": {
+    "start:dev": "nodemon server.js",
+    "seed": "node prisma/seed.js",
+    "reset-db": "npx prisma migrate reset --force && npx prisma studio",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/19awburris88/Unit4.Prisma.Workshop.PuppyBowl.API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/19awburris88/Unit4.Prisma.Workshop.PuppyBowl.API/issues"
+  },
+  "homepage": "https://github.com/19awburris88/Unit4.Prisma.Workshop.PuppyBowl.API#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "prisma": "^6.5.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.5.0",
+    "express": "^4.21.2",
+    "morgan": "^1.10.0"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  }
+}
